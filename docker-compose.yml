@@ -1,0 +1,10 @@
+version: '3'
+services:
+  app:
+    build: ./front
+    command: npm run serve
+    volumes:
+      - "./front/:/src/front"
+    ports:
+     - "8080:8080"
+
